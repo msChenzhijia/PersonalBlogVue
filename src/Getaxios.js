@@ -6,8 +6,10 @@ const Url={
 axios.ajax=axios.create({
     basePath:Url.apiPath
 });
-// axios.get(function(url){
-//     axios.ajax+url;
+//get无参数获取数据
+// axios.get(axios.ajax+Url).then(function(reponse){
+//     return reponse;
+// }).catch(function(error){
+//     console.log(error)
 // })
     
-export default axios;

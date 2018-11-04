@@ -26,7 +26,7 @@
     </div>
 </template>
 <script>
-import $ from '../Getaxios.js';
+//import $ from '../Getaxios.js';
 import axios from 'axios';
 export default {
     data(){
