@@ -62,7 +62,7 @@
                         <img src="../img/下载.jpg" class="img-responsive" alt="">
                     </div>
                     <div class="contextDiv col-md-8">
-                        <h3 style="text-align: left;" class="title col-md-12 col-xs-12 "><a href="#">Axios</a></h3>
+                        <h4 style="text-align: left;" class="title col-md-12 col-xs-12 "><a href="#">Axios</a></h4>
                         <span class="col-md-12 col-xs-12 context" style="text-align: left;">实现数据交互</span>  
                          <span class="col-md-12 footer" style="text-align:left">
                               <a href="#"><i class="glyphicon glyphicon-eye-open"></i>45</a> 
@@ -77,7 +77,7 @@
                         <img src="../img/下载.jpg" class="img-responsive" alt="">
                     </div>
                     <div class="contextDiv col-md-8">
-                      <h3 style="text-align: left;" class="title col-md-12 col-xs-12 "><a href="#">Axios</a></h3>
+                      <h4 style="text-align: left;" class="title col-md-12 col-xs-12 "><a href="#">Axios</a></h4>
                       <span class="col-md-12 col-xs-12 context" style="text-align: left;">实现数据交互</span>  
                       <span class="col-md-12 footer" style="text-align:left">
                             <a href="#"><i class="glyphicon glyphicon-eye-open"></i>45</a> 
@@ -92,7 +92,7 @@
                         <img src="../img/下载.jpg" class="img-responsive" alt="">
                     </div>
                     <div class="contextDiv col-md-8">
-                      <h3 style="text-align: left;" class="title col-md-12 col-xs-12 "><a href="#">Axios</a></h3>
+                      <h4 style="text-align: left;" class="title col-md-12 col-xs-12 "><a href="#">Axios</a></h4>
                       <span class="col-md-12 col-xs-12 context" style="text-align: left;">实现数据交互</span>  
                       <span class="col-md-12 footer" style="text-align:left">
                             <a href="#"><i class="glyphicon glyphicon-eye-open"></i>45</a> 
@@ -101,8 +101,17 @@
                       </span>    
                     </div>
               </div>      
+
+              <h4 style="text-align:left;color:gray" class="newTitle col-md-12 container">其他</h4>
+              <div class="col-md-12  container">
+                  <div class="imgDiv col-md-4" style="padding-left:30px" >
+                       <a href="https://www.cnblogs.com/biao-123/"><img class="img-responsive" src="../img/timg.jpg" alt=""></a> 
+                  </div>   
+                  <div class="imgDiv col-md-5 " >
+                       <a href="https://github.com/msChenzhijia"><img class="img-responsive" src="../img/timg1.jpg" alt=""></a> 
+                  </div>                 
               </div>
-               
+              </div>
           </div>
       </div>
       <div class="footer col-md-12" style="background:gray;color:white;">
@@ -120,7 +129,11 @@ export default {
       list: [],
       isNva:true,
       isContainer:true,
-      isColMd12:true
+      isColMd12:true,
+      imgData:[
+        {imgUrl:'../img/timg.jpg'},
+        {imgUrl:'../img/timers.jpg'}
+      ]
     };
   },
   methods: {

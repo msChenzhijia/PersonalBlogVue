@@ -1,5 +1,4 @@
 
-
 .nav {
   list-style: none;
   background-color: dimgray;
@@ -17,8 +16,7 @@
 }
 .contextDiv .leftDiv .content {
   padding: 0px;
-  margin: 0px;
-  margin-bottom: 10px;
+  margin: 0px;  
   border-bottom: 1px solid goldenrod;
 }
 .contextDiv .leftDiv .content .imgDiv{
@@ -41,5 +39,16 @@
   margin-bottom: 10px;
 }
 .contextDiv .rightDiv .newStore .content .imgDiv img{
-  padding: 10px;
+  padding:5px;
+  margin: 0
+}
+.contextDiv .rightDiv .newStore .content h4{
+  margin-top: 10px;  
+  padding:0px;
+  margin-bottom: 0px
+}
+.contextDiv .rightDiv .newStore .content .context{
+  margin-top:0px;  
+  padding:0px;
+  
 }

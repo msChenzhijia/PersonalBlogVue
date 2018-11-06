@@ -38,12 +38,26 @@ export default {
     },
    methods:{
        GetLogin(){
-            this.list=axios.get('http://localhost:64493/api/Blog/GetBlogs').then(function(reponse){             
-                console.log(reponse);
+           var that=this;
+            this.list=axios.get('http://localhost:64493/api/Login/Token?id=1&sub=Admin').then(function(reponse){             
+                that.$store.commit('increment',reponse.data);
+               // console.log(that.$store.state.count);
             }).catch(function(error){
                 console.log(error);
             })            
+       },
+       GetStore(){
+           console.log(this.$store.state.count);
+       },
+       handleIncrement(){
+           this.$store.commit('increment',"陈志佳");
+       },
+       handleIncrement1(){          
+            console.log(this.$store.state.count);
        }
+   },
+   mounted(){
+       
    }
    
 }
