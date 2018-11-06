@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    color: aliceblue;
+  }
+  a {
+    color: darkgray;
+    margin-right: 10px;
+  }

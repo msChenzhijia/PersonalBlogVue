@@ -36,7 +36,6 @@ export default {
         }
         
     },
-  
    methods:{
        GetLogin(){
             this.list=axios.get('http://localhost:64493/api/Blog/GetBlogs').then(function(reponse){             

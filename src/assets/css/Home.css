@@ -1,0 +1,45 @@
+
+
+.nav {
+  list-style: none;
+  background-color: dimgray;
+}
+.nav li {
+  float: left;
+}
+.nav li a:hover {
+  color: black;
+}
+.contextDiv .leftDiv {
+  padding: 0px;
+  margin: 0px;
+  border-right: 1px solid gray;
+}
+.contextDiv .leftDiv .content {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid goldenrod;
+}
+.contextDiv .leftDiv .content .imgDiv{
+  padding: 10px
+}
+.contextDiv .leftDiv .footer{   
+   display: block
+}
+
+.contextDiv .rightDiv {
+  padding: 0px;
+  margin: 0px;  
+}
+.contextDiv .rightDiv {
+  padding: 0px;
+  margin: 0px;   
+}
+.contextDiv .rightDiv .newStore .content{
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+}
+.contextDiv .rightDiv .newStore .content .imgDiv img{
+  padding: 10px;
+}

@@ -1,0 +1,36 @@
+@media (max-width: 767px) {
+    #box .contextDiv .leftDiv {
+      padding: 0px;
+      margin: 0px;          
+    }
+    .contextDiv .leftDiv .content {
+        padding: 0px;
+        margin: 0px;        
+        border-bottom: 1px solid goldenrod;
+        
+      }
+}
+/* 适应平板和电脑 */
+@media (min-width: 992px){
+    #box .navDiv .mark{
+        display: none
+    }
+ }
+ /* 手机 */
+@media screen and (min-width: 320px) and (max-width: 767px){
+   #box .contextDiv .leftDiv{
+       border-right: 0
+   }
+   #box .navDiv .nav {
+       display: none
+   }
+   #box .navDiv .mark{
+       font-size: 20px;
+       text-align: left;
+       background-color:grey
+   }
+   #box .navDiv .mark:hover{
+        cursor: pointer;
+        color: blanchedalmond
+   }
+}
