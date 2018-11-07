@@ -5,11 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    count:""
+    jwtToke:""
   },
   mutations: {
       increment(state,n=""){
-        state.count=n;
+        state.jwtToke=n;
       }
   },
   actions: {

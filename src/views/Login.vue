@@ -6,11 +6,11 @@
                 <div class="col-md-9">
                     <div class="form-group">
                         <i class="fa fa-user fa-lg"></i>
-                        <input class="form-control required" type="text" placeholder="Username" id="username" name="username" autofocus="autofocus" maxlength="20"/>
+                        <input class="form-control required" type="text" placeholder="Username" id="username" name="username" autofocus="autofocus" maxlength="20" v-model="username"/>
                     </div>
                     <div class="form-group">
                             <i class="fa fa-lock fa-lg"></i>
-                            <input class="form-control required" type="password" placeholder="Password" id="password" name="password" maxlength="8"/>
+                            <input class="form-control required" type="password" placeholder="Password" id="password" name="password" maxlength="8" v-model="password"/>
                     </div>
                     <div class="form-group">
                         <label class="checkbox">
@@ -32,34 +32,44 @@ export default {
     data(){
         return {
             list:[],
-            usLogin:true
+            usLogin:true,
+            password:'',
+            username:''
         }
         
     },
    methods:{
        GetLogin(){
-           var that=this;
-            this.list=axios.get('http://localhost:64493/api/Login/Token?id=1&sub=Admin').then(function(reponse){             
+
+                 var that=this;         
+                this.list=axios.get('http://localhost:64493/api/Login',{headers:{"Authorization":that.$store.state.jwtToke},params:{'name':that.username,'pass':that.password}}).then(function(reponse){                                    
+                
+                sessionStorage.setItem('sid', reponse.data);
+                that.$router.push(that.$route.query.redirect); 
+                //console.log(reponse);                
+            }).catch(function(error){
+                console.log(error);
+            })        
+       },
+       GetJwt(){
+           var that=this;            
+           that.$store.commit('increment','');
+            //sessionStorage.setItem('sid', '');
+           //获取jwt令牌
+           this.list=axios.get('http://localhost:64493/api/Login/Token?id=1&sub=Admin').then(function(reponse){             
                 that.$store.commit('increment',reponse.data);
-               // console.log(that.$store.state.count);
+                console.log(that.$store.state.jwtToke);                
+                //console.log(that.$store.state.reponse);                
             }).catch(function(error){
                 console.log(error);
             })            
-       },
-       GetStore(){
-           console.log(this.$store.state.count);
-       },
-       handleIncrement(){
-           this.$store.commit('increment',"陈志佳");
-       },
-       handleIncrement1(){          
-            console.log(this.$store.state.count);
-       }
+       }     
    },
    mounted(){
-       
+       this.GetJwt();
    }
    
 }
 </script>
+
 
