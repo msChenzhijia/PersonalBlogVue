@@ -36,14 +36,12 @@ export default {
             password:'',
             username:''
         }
-        
     },
    methods:{
+       //登录事件
        GetLogin(){
-
-                 var that=this;         
-                this.list=axios.get('http://localhost:64493/api/Login',{headers:{"Authorization":that.$store.state.jwtToke},params:{'name':that.username,'pass':that.password}}).then(function(reponse){                                    
-                
+                var that=this;         
+                this.list=axios.get('http://localhost:64493/api/Login',{headers:{"Authorization":that.$store.state.jwtToke},params:{'name':that.username,'pass':that.password}}).then(function(reponse){                                                    
                 sessionStorage.setItem('sid', reponse.data);
                 that.$router.push(that.$route.query.redirect); 
                 //console.log(reponse);                
@@ -51,15 +49,13 @@ export default {
                 console.log(error);
             })        
        },
+       //获取JWT令牌
        GetJwt(){
            var that=this;            
-           that.$store.commit('increment','');
-            //sessionStorage.setItem('sid', '');
+           that.$store.commit('increment','');          
            //获取jwt令牌
            this.list=axios.get('http://localhost:64493/api/Login/Token?id=1&sub=Admin').then(function(reponse){             
-                that.$store.commit('increment',reponse.data);
-                console.log(that.$store.state.jwtToke);                
-                //console.log(that.$store.state.reponse);                
+                that.$store.commit('increment',reponse.data);                
             }).catch(function(error){
                 console.log(error);
             })            

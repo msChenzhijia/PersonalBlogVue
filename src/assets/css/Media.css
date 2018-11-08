@@ -15,9 +15,16 @@
     #box .navDiv .mark{
         display: none
     }
+    #BackBox .leftDiv{   
+        padding: 0;
+        margin: 0;    
+        border-right: 1px solid grey;   
+        background-color: darkgray;
+        height:73.7rem;
+        }
  }
  /* 手机 */
-@media screen and (min-width: 200px) and (max-width: 767px){
+@media screen and (min-width: 0px) and (max-width: 767px){
    #box .contextDiv .leftDiv{
        border-right: 0
    }
@@ -33,4 +40,12 @@
         cursor: pointer;
         color: blanchedalmond
    }
+   #BackBox .leftDiv{   
+        padding: 0;
+        margin: 0;    
+        border-right: 1px solid grey;       
+    }
+    #BackBox .leftDiv .imgDiv{
+        display: none
+    }
 }

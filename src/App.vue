@@ -5,7 +5,8 @@
     <div id="nav">
       <router-link to="/">主页</router-link> |
       <router-link to="/about">关于网站</router-link> |
-      <router-link to="/login">管理员登陆</router-link>      
+      <router-link to="/login">管理员登陆</router-link> |     
+      <router-link to="/BackIndex">后台</router-link> 
     </div>
     <router-view/>
   </div>

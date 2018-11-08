@@ -8,6 +8,7 @@ import bootstrapjs from './bootstrap-3.3.7-dist/js/bootstrap.js'
 import HomeCss from './assets/css/Home.css'
 import MediaCss from './assets/css/Media.css'
 import StyleCss from './assets/css/Style.css'
+import BackIndexCss from './assets/css/BackIndex.css'
 
 
 Vue.config.productionTip = false

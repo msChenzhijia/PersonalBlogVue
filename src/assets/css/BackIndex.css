@@ -1,0 +1,61 @@
+ul{
+    list-style: none
+}
+#BackBox{
+    border-top: 1px solid gray;
+    padding: 0
+}
+#BackBox .leftDiv{    
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid grey;    
+}
+#BackBox .leftDiv .imgDiv{    
+    padding: 0;
+    margin:1.5rem;    
+}
+#BackBox .leftDiv .navDiv{    
+    padding: 0;
+    margin: 0;
+}
+#BackBox .leftDiv .navDiv nav{    
+    padding: 0;
+    margin:0
+}
+#BackBox .leftDiv .navDiv nav ul{    
+    padding:0;
+    margin:0
+}
+#BackBox .leftDiv .navDiv nav ul li{    
+    padding:0;
+    margin:0;
+    border-top: 1px solid gray;
+    width:100%;
+}
+#BackBox .leftDiv .navDiv nav ul li a{    
+    margin: 0;
+}
+#BackBox .rightDiv{    
+    padding: 0;
+    margin: 0;    
+    height:100%;
+}
+#BackBox .rightDiv .navDiv{    
+    padding: 0;
+    margin: 0;        
+}
+#BackBox .rightDiv .navDiv nav{    
+    padding: 0;
+    margin: 0;        
+}
+body{
+    height: 100%;
+}
+#BackBox .rightDiv .ShowDiv,.AddDiv,.EditDiv{    
+    padding: 0;
+    margin: 0;            
+    height:69.4rem;
+}
+.navbar-nav{
+    margin: 0
+}
