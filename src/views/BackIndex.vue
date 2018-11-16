@@ -2,7 +2,15 @@
     <div id="BackBox" class="col-md-12">
         <div class="leftDiv col-md-2 row">
             <div class="imgDiv col-md-12 ">
-                <img src="../img/ss.jpg" alt="" class="container img-circle col-md-10">                                
+                <img src="../img/ss.jpg" alt="" class="container img-circle col-md-10"> 
+                <div class="col-md-12">
+                   <div class="dropdown">
+                    <a data-toggle="dropdown" href="#">xxx</a>
+                         <ul class="dropdown-menu col-md-12" role="menu" aria-labelledby="dLabel">
+                             <li class="col-md-12"><a href="#">注销</a></li>
+                        </ul>
+                    </div>
+                </div>                               
             </div>
             <div class="navDiv col-md-12">
                 <nav class="navbar col-md-12 col-xs-12" role="navigation">
@@ -46,8 +54,21 @@
                             </ul>
                         </li>
                         <li class="col-md-12"><a href="#">Git</a></li>
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                设置
+                            <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu col-md-12">
+                                <li class="col-md-12"><a href="#">分类</a></li>
+                                <li class="col-md-12"><a href="#">角色</a></li>
+                                <li class="col-md-12"><a href="#">用户</a></li>
+                                <li class="col-md-12"><a href="#">添加其他分类</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
+                <div class="btn">>></div>
             </div>
         </div>
         <div class="rightDiv col-md-10">
@@ -64,19 +85,29 @@
                 展示列表    
             </div>      
             <div class="AddDiv col-md-12"  v-show="add">
-               <div class="form-group col-md-8 form-inline">
+                <div class="form-group col-md-12 form-inline">
+                    <label for="title">分类</label>
+                    <select name="" id="" class="form-control">
+                        <option value="C#">C#</option>
+                        <option value="JAVA">JAVA</option>
+                        <option value="C#">Web</option>
+                        <option value="CLR">CLR</option>
+                    </select>
+                    <hr>       
+               </div>
+               <div class="form-group col-md-12 form-inline">
                     <label for="title">标题</label>
                     <input type="text" class="form-control" id="title" placeholder="title">
                     <hr>       
                </div>
-               <div class="form-group col-md-8 form-inline">
+               <div class="form-group col-md-12 form-inline">
                     <label for="img">图片</label>
                     <input type="file" class="form-control" id="img" placeholder="img">
                     <hr>       
                </div>
-               <div class="form-group col-md-8 form-inline">
+               <div class="form-group col-md-12 form-inline">
                     <label for="content">内容</label>
-                   <textarea name="content" id="content" cols="30" rows="10" ></textarea>
+                   <textarea name="content" id="content" cols="150" rows="10" style="resize: none" ></textarea>
                     <hr>       
                </div>
             </div>      

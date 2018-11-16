@@ -12,7 +12,18 @@ ul{
 }
 #BackBox .leftDiv .imgDiv{    
     padding: 0;
-    margin:1.5rem;    
+    margin:0;    
+}
+#BackBox .leftDiv .imgDiv img{    
+    padding: 0;
+    margin:1rem;    
+}
+#BackBox .leftDiv .imgDiv div{    
+    padding: 0;
+    margin:0;    
+}
+#BackBox .leftDiv .imgDiv .dropdown a{    
+    color: aliceblue
 }
 #BackBox .leftDiv .navDiv{    
     padding: 0;
