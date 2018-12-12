@@ -40,12 +40,21 @@
         cursor: pointer;
         color: blanchedalmond
    }
+    /* 后台网页样式 */
    #BackBox .leftDiv{   
         padding: 0;
         margin: 0;    
         border-right: 1px solid grey;       
-    }
+   }
     #BackBox .leftDiv .imgDiv{
         display: none
-    }
+   }
+   #BackBox .leftDiv .navDiv .btn{
+       display: none
+   }
+   #BackBox .rightDiv .ShowDiv, .AddDiv, .EditDiv{
+       margin: 0px;
+       padding: 0px;
+   }
+
 }

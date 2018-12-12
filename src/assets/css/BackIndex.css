@@ -3,12 +3,13 @@ ul{
 }
 #BackBox{
     border-top: 1px solid gray;
-    padding: 0
+    padding: 0;
+    height: 100%; 
 }
 #BackBox .leftDiv{    
     padding: 0;
     margin: 0;
-    border-right: 1px solid grey;    
+    border-right: 1px solid grey;   
 }
 #BackBox .leftDiv .imgDiv{    
     padding: 0;
@@ -31,7 +32,8 @@ ul{
 }
 #BackBox .leftDiv .navDiv nav{    
     padding: 0;
-    margin:0
+    margin:0;
+  
 }
 #BackBox .leftDiv .navDiv nav ul{    
     padding:0;
@@ -58,9 +60,6 @@ ul{
 #BackBox .rightDiv .navDiv nav{    
     padding: 0;
     margin: 0;        
-}
-body{
-    height: 100%;
 }
 #BackBox .rightDiv .ShowDiv,.AddDiv,.EditDiv{    
     padding: 0;

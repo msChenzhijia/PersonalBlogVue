@@ -4,8 +4,13 @@
   }
   html {
     color: aliceblue;
+    height: 100%;
+    /* display:table; */
   }
   a {
     color: darkgray;
     margin-right: 10px;
   }
+  body{
+    height: 100%;
+}
