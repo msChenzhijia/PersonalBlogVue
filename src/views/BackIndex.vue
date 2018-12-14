@@ -164,6 +164,7 @@
 </template>
 <script>
 import axios from "axios";
+import qs from 'qs';
 export default {
   data() {
     return {
@@ -198,7 +199,7 @@ export default {
       }
     },
     DataSend() {
-       var Obj={
+       var data={
          bsubmitter:"陈志佳",
          btitle:"ASP.NET MVC使用Ninject",
          bcategory:"C#",
@@ -209,11 +210,13 @@ export default {
          bCreateTime:Date.now(),
          bRemark:""
        };
-
-
-      axios.post('http://localhost:64493/api/Blog/Insert', {
-          name:"陈志佳"
-      })
+      axios.get('http://localhost:64493/api/Blog/Inserts',{
+    params: {
+      advertisement: data
+    }},
+    {headers:{
+        'Content-Type':'application/json'
+      }})
 .then(function (response) {
 console.log(response);
 })
